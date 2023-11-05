@@ -32,6 +32,7 @@ class Post
     ],
 ];
 
+
 public static function all()
 {
     return collect(self::$blog_posts);
