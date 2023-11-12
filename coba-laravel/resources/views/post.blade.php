@@ -7,7 +7,7 @@
     <div class="row justify-content-center ">
         <div class="col-md-8">
         <h1 class="mb-3"> {{ $post["title"] }} </h1>
-        <p>By. <a href="/author/{{ $post->author->username }} " class="text-decoration-none"> {{ $post->author->name }} </a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a> </p>
+        <p>By. <a href="/posts?author={{ $post->author->username }} " class="text-decoration-none"> {{ $post->author->name }} </a> in <a href="/posts?category={{ $post->category->slug }}">{{ $post->category->name }}</a> </p>
 
         <img src="https://source.unplash.com/1200x400?{{ $posts->category->name }}" alt="{{ $posts->category->name }}" class="img-fluid">
 
